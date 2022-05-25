@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="27a86662-a9ef-4489-bfcd-aa18be916e1e" name="Default Changelist" comment="netty frame">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_1_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_1_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson2_fastjson2_2_0_3_graal.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson2_fastjson2_extension_2_0_3_graal.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_2_0_3_graal.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_all_4_1_77_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_1_77_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_1_77_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_dns_4_1_77_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_haproxy_4_1_77_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_http2_4_1_77_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_http_4_1_77_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_memcache_4_1_77_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_mqtt_4_1_77_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_redis_4_1_77_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_smtp_4_1_77_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_socks_4_1_77_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_stomp_4_1_77_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_xml_4_1_77_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_1_77_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_77_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_proxy_4_1_77_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_4_1_77_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_dns_4_1_77_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_dns_classes_macos_4_1_77_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_dns_native_macos_osx_aarch_64_4_1_77_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_dns_native_macos_osx_x86_64_4_1_77_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_1_77_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_classes_epoll_4_1_77_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_classes_kqueue_4_1_77_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_epoll_linux_aarch_64_4_1_77_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_epoll_linux_x86_64_4_1_77_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_kqueue_osx_aarch_64_4_1_77_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_kqueue_osx_x86_64_4_1_77_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_unix_common_4_1_77_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_rxtx_4_1_77_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_sctp_4_1_77_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_udt_4_1_77_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_13_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_annotations_13_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_1_6_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_common_1_6_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_jdk7_1_6_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_jdk8_1_6_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20220320.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_20.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/qaplug_profiles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/happychat.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wolfbe/chat/HappyChatMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wolfbe/chat/HappyChatServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wolfbe/chat/core/BaseServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wolfbe/chat/core/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wolfbe/chat/entity/UserFaceIco.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wolfbe/chat/entity/UserInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wolfbe/chat/handler/DispatchHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wolfbe/chat/handler/FileUploadServerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wolfbe/chat/handler/MessageHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wolfbe/chat/handler/UserAuthHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wolfbe/chat/handler/UserInfoManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wolfbe/chat/proto/ChatCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wolfbe/chat/proto/ChatProto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wolfbe/chat/util/BlankUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wolfbe/chat/util/Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wolfbe/chat/util/DateTimeUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wolfbe/chat/util/NettyUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wolfbe/chat/util/ParamUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wolfbe/chat/util/ResponseUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wolfbe/chat/vo/FileUploadRequestVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wolfbe/chat/vo/HttpRequestVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wolfbe/chat/vo/WebSocketRequestVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/10.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/11.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/12.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/13.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/14.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/15.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/17.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/18.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/19.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/20.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/21.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/22.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/23.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/24.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/25.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/26.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/27.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/28.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/29.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/30.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/31.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/32.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/33.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/34.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/35.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/36.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/37.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/38.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/39.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/4.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/40.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/41.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/42.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/43.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/44.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/45.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/46.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/47.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/48.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/49.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/5.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/50.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/51.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/52.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/53.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/54.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/55.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/56.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/57.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/58.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/59.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/6.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/60.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/61.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/62.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/63.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/64.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/65.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/66.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/67.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/68.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/69.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/7.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/70.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/71.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/72.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/73.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/74.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/75.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/8.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/arclist/9.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/css/chat.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/css/reset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/js/chat.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/js/http_cdn.bootcss.com_bootstrap_3.3.5_js_bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/js/http_cdn.bootcss.com_jquery_2.1.4_jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/js/http_cdn.staticfile.org_jquery_2.1.1_jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/js/http_oss.maxcdn.com_html5shiv_3.7.2_html5shiv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/js/http_oss.maxcdn.com_respond_1.4.2_respond.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/js/jQuery-2.2.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/js/jquery.min-1.8.2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/js/jquery.qqFace.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/10.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/11.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/12.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/13.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/14.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/15.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/17.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/18.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/19.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/20.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/21.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/22.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/23.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/24.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/25.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/26.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/27.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/28.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/29.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/30.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/31.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/32.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/33.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/34.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/35.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/36.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/37.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/38.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/39.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/4.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/40.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/41.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/42.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/43.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/44.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/45.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/46.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/47.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/48.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/49.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/5.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/50.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/51.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/52.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/53.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/54.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/55.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/56.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/57.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/58.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/59.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/6.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/60.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/61.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/62.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/63.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/64.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/65.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/66.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/67.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/68.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/69.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/7.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/70.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/71.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/72.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/73.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/74.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/75.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/8.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/arclist/9.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/bootstrap/css/chat.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/bootstrap/css/reset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/bootstrap/js/chat.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/bootstrap/js/http_cdn.bootcss.com_bootstrap_3.3.5_js_bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/bootstrap/js/http_cdn.bootcss.com_jquery_2.1.4_jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/bootstrap/js/http_cdn.staticfile.org_jquery_2.1.1_jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/bootstrap/js/http_oss.maxcdn.com_html5shiv_3.7.2_html5shiv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/bootstrap/js/http_oss.maxcdn.com_respond_1.4.2_respond.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/bootstrap/js/jQuery-2.2.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/bootstrap/js/jquery.min-1.8.2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/bootstrap/js/jquery.qqFace.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/Practice.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/Practice.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://D:/MavenJarKu/io/netty/netty-all/4.1.6.Final/netty-all-4.1.6.Final-sources.jar!/io/netty/buffer/Unpooled.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://D:/MavenJarKu/io/netty/netty-all/4.1.6.Final/netty-all-4.1.6.Final-sources.jar!/io/netty/buffer/ByteBuf.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="JRebelWorkspace">
+    <option name="jrebelEnabledAutocompile" value="true" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/HJ/apache-maven-3.6.1" />
+        <option name="userSettingsFile" value="D:\HJ\apache-maven-3.6.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="jdkForImporter" value="11" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="23JccthLjvvPSIJayezAFCLyzSg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="ToolWindowMaven.ShowToolbar" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="go.formatter.settings.were.checked" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.30184332" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.wolfbe.chat.handler" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\HappyChat-master\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\workspace.java\HappyChat-master\src\main\resources\static\bootstrap\js" />
+      <recent name="C:\Users\Administrator\Desktop\HappyChat-master\src\main\resources\statics" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.Practice.dirIsLive">
+    <configuration name="BaseServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wolfbe.chat.core.BaseServer" />
+      <module name="happychat" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HappyChatMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wolfbe.chat.HappyChatMain" />
+      <module name="happychat" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MessageHandler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wolfbe.chat.handler.MessageHandler" />
+      <module name="happychat" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Practice.dirIsLive" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="happychat" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Practice" />
+      <option name="METHOD_NAME" value="dirIsLive" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.Practice.dirIsLive" />
+        <item itemvalue="Application.HappyChatMain" />
+        <item itemvalue="Application.BaseServer" />
+        <item itemvalue="Application.MessageHandler" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="27a86662-a9ef-4489-bfcd-aa18be916e1e" name="Default Changelist" comment="" />
+      <created>1641455712774</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1641455712774</updated>
+      <workItem from="1641455715456" duration="12439000" />
+      <workItem from="1641535129000" duration="1196000" />
+      <workItem from="1641795136594" duration="11466000" />
+      <workItem from="1642041413605" duration="1791000" />
+      <workItem from="1642125411855" duration="1739000" />
+      <workItem from="1653284453673" duration="15781000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="netty frame" />
+    <option name="LAST_COMMIT_MESSAGE" value="netty frame" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="ctx" language="JAVA" />
+        <watch expression="ctx.channel().localAddress()" language="JAVA" />
+        <watch expression="ctx.channel()" language="JAVA" />
+        <watch expression="lastExecutionTime" language="JAVA" />
+        <watch expression="START_TIME" language="JAVA" />
+        <watch expression="System.nanoTime()" language="JAVA" />
+        <watch expression="System.nanoTime() - START_TIME;" language="JAVA" />
+        <watch expression="runTasks &amp; 0x3F" language="JAVA" />
+        <watch expression="Integer.parseInt(&quot;3f&quot;,16)" language="JAVA" />
+        <watch expression="6 &lt;&lt; 8 | 220" language="JAVA" />
+        <watch expression="6 &lt;&lt; 8" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.alibaba:fastjson:2.0.3.graal">
+    <CLASSES>
+      <root url="jar://D:/MavenJarKu/com/alibaba/fastjson/2.0.3.graal/fastjson-2.0.3.graal.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://D:/MavenJarKu/com/alibaba/fastjson/2.0.3.graal/fastjson-2.0.3.graal-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://D:/MavenJarKu/com/alibaba/fastjson/2.0.3.graal/fastjson-2.0.3.graal-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

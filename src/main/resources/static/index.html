@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="聊天室,Netty,WebSocket">
+    <meta name="author" content="Andy">
+    <link rel="icon" href="./favicon.ico">
+    <title>ba💚la💚ba💚la</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/bootstrap/css/reset.css">
+    <link rel="stylesheet" href="../static/bootstrap/css/chat.css">
+
+
+</head>
+<body>
+<div class="modal fade" id="menuModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="modalLabel">ba la ba la</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" id="menuForm">
+                    <input type="hidden" name="id" id="id"/>
+                    <div class="form-group">
+                        <label for="nick" class="col-sm-2 control-label">nickname:</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control validate[required]" name="nick" id="nick">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="loginBtn">logIn</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="tipModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <!--<div class="modal-header">-->
+            <!--<h4 class="modal-title">提示信息</h4>-->
+            <!--</div>-->
+            <div class="modal-body" id="tipMsg" style="align:center;"></div>
+        </div>
+    </div>
+</div>
+
+<div id="chatWin" style="display:none;width:80%; padding-left: 100px">
+    <div class="row top">
+        <div class="col-sm-12" id="top">
+            <div style="color:#fff;">
+                onlineUsers：<span id="userCount" style="color:#fff;">666</span> 人
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div id="content">
+
+        </div>
+    </div>
+    <div  id="opt" style="height:0px;">
+        <div class="col-xs-2" style="padding:0;height:40px;line-height:40px;text-align:center;">
+            <button id="faceBtn" style="height:40px;width:100%;outline:none;line-height:40px;">表情</button>
+        </div>
+        <div class="col-xs-8" style="padding:0;height:40px;line-height:40px;">
+            <input type="text" id="mess" style="margin:0;width:100%;height:40px;outline:none;"/>
+        </div>
+        <div class="col-xs-2" style="padding:0; ">
+            <button id="sendBtn" style="height:40px;width:100%;outline:none;line-height:40px;">send</button>
+        </div>
+        <form id="upload" enctype="multipart/form-data" method="post">
+            <div class="col">
+                <input type="file" name="file"/>
+            </div>
+            <div class="col">
+                <button id="send-btn">发送</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!--[if lt IE 9]>
+<script src="../static/bootstrap/js/http_oss.maxcdn.com_html5shiv_3.7.2_html5shiv.js"></script>
+<script src="../static/bootstrap/js/http_oss.maxcdn.com_respond_1.4.2_respond.min.js"></script>
+<![endif]-->
+
+<script src="../static/bootstrap/js/jQuery-2.2.0.min.js"></script>
+<script src="../static/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../static/bootstrap/js/jquery.qqFace.js"></script>
+<script type="text/javascript" src="../static/bootstrap/js/chat.js"></script>
+</body>
+
+</html>
+
