@@ -6,10 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="happy-chat" />
         <module name="happychat" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="happy-chat" target="11" />
       <module name="happychat" target="11" />
     </bytecodeTargetLevel>
   </component>
