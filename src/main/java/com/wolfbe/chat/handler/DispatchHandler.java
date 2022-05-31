@@ -2,17 +2,12 @@ package com.wolfbe.chat.handler;
 
 import com.wolfbe.chat.util.Constants;
 import com.wolfbe.chat.util.ParamUtil;
-import com.wolfbe.chat.vo.FileUploadRequestVo;
-import com.wolfbe.chat.vo.HttpRequestVo;
-import com.wolfbe.chat.vo.WebSocketRequestVo;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 import io.netty.handler.codec.http.FullHttpRequest;
 import io.netty.handler.codec.http.HttpHeaderNames;
 import io.netty.handler.codec.http.HttpHeaderValues;
 import io.netty.handler.codec.http.HttpMethod;
-import io.netty.handler.codec.http.websocketx.WebSocketFrame;
-import jdk.internal.net.http.websocket.WebSocketRequest;
 
 /**
  * @author: zhouy
@@ -21,23 +16,24 @@ import jdk.internal.net.http.websocket.WebSocketRequest;
 public class DispatchHandler extends SimpleChannelInboundHandler<Object> {
     @Override
     protected void channelRead0(ChannelHandlerContext ctx, Object msg) throws Exception {
-        if (msg instanceof FullHttpRequest) {
-            FullHttpRequest request = (FullHttpRequest) msg;
-            //判断是否为websocket握手请求
-            if (isWebSocketHandShake(request)) {
-                ctx.fireChannelRead(new WebSocketRequestVo(request));
-                //文件上传
-            } else if (isFileUpload(request)) {
-                ctx.fireChannelRead(new FileUploadRequestVo(request));
-                //Http请求
-            } else {
-                ctx.fireChannelRead(new HttpRequestVo(request));
-            }
-            //websocket请求
-        } else if (msg instanceof WebSocketRequest) {
-            WebSocketFrame frame = (WebSocketFrame) msg;
-            ctx.fireChannelRead(new WebSocketRequestVo(frame));
-        }
+//        if (msg instanceof FullHttpRequest) {
+//            FullHttpRequest request = (FullHttpRequest) msg;
+//            //判断是否为websocket握手请求
+//            if (isWebSocketHandShake(request)) {
+//                ctx.fireChannelRead(new WebSocketRequestVo(request));
+//                //文件上传
+//            } else if (isFileUpload(request)) {
+//                ctx.fireChannelRead(new FileUploadRequestVo(request));
+//                //Http请求
+//            } else {
+//                ctx.fireChannelRead(new HttpRequestVo(request));
+//            }
+//            //websocket请求
+
+//        } else if (msg instanceof WebSocketRequest) {
+//            WebSocketFrame frame = (WebSocketFrame) msg;
+//            ctx.fireChannelRead(new WebSocketRequestVo(frame));
+//        }
 
     }
 

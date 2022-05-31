@@ -31,3 +31,12 @@ build/
 
 ### VS Code ###
 .vscode/
+
+
+### how to update .gitignore ###
+# 用rm命令清除一下相关的缓存内容
+# git rm -r --cached .
+# 然重新添加提交一下
+# git add .
+# .gitignore文件里的规则就起作用了
+# git commit -m 'update .gitignore'
