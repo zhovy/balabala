@@ -20,28 +20,34 @@ public class KillDemo {
     public static void main(String[] args) throws InterruptedException {
         ExecutorService executorService = Executors.newCachedThreadPool();
         KillDemo killDemo = new KillDemo();
+
         killDemo.mergeJob();
+
         Thread.sleep(2000);
 
         List<Future<Result>> futureList = new ArrayList<>();
+        //
         CountDownLatch countDownLatch = new CountDownLatch(10);
+
         for (int i = 0; i < 10; i++) {
             final Long orderId = i + 100L;
             final Long userId = (long) i;
             Future<Result> future = executorService.submit(() -> {
                 countDownLatch.countDown();
+                // countDown的值为0的时候会唤醒await
                 final boolean await = countDownLatch.await(1000, TimeUnit.SECONDS);
-                if (await) log.debug("await 1000 ms");
-
+                if (await) log.info("await 1000 ms" + countDownLatch);
+                else log.info("倒计时：" + countDownLatch);
                 return killDemo.operate(new UserRequest(orderId, userId, 1));
             });
+
             futureList.add(future);
         }
 
         futureList.forEach(future -> {
             try {
                 Result result = future.get(300, TimeUnit.MILLISECONDS);
-                System.out.println(Thread.currentThread().getName() + ":客户端请求响应:" + result);
+                log.info(Thread.currentThread().getName() + ":客户端请求响应:" + result);
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -51,6 +57,7 @@ public class KillDemo {
     // 模拟数据库行
     private Integer stock = 10;
 
+    // 锁队列
     private final BlockingQueue<RequestPromise> queue = new LinkedBlockingQueue<>(10);
 
     /**
@@ -58,6 +65,7 @@ public class KillDemo {
      */
     public Result operate(UserRequest userRequest) throws InterruptedException {
         // TODO 阈值判断
+
         // TODO 队列的创建
         RequestPromise requestPromise;
         synchronized (requestPromise = new RequestPromise(userRequest)) {
@@ -84,6 +92,7 @@ public class KillDemo {
                 if (queue.isEmpty()) {
                     try {
                         Thread.sleep(10);
+                        log.info("sleep 10ms,等待队列长度为0");
                         continue;
                     } catch (InterruptedException e) {
                         e.printStackTrace();

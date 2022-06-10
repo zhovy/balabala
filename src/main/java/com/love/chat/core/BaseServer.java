@@ -46,7 +46,7 @@ public abstract class BaseServer implements Server {
             }
         });
         workGroup = new NioEventLoopGroup(Runtime.getRuntime().availableProcessors() * 10, new ThreadFactory() {
-            private AtomicInteger index = new AtomicInteger(0);
+            private final AtomicInteger index = new AtomicInteger(0);
 
             @Override
             public Thread newThread(Runnable r) {
