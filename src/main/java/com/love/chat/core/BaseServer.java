@@ -6,42 +6,41 @@ import io.netty.channel.ChannelOption;
 import io.netty.channel.DefaultEventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
+import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.atomic.AtomicInteger;
 
-/**
- * @author Andy
- */
+
 public abstract class BaseServer implements Server {
 
-    protected Logger logger = LoggerFactory.getLogger(getClass());
+    protected Logger logger = LoggerFactory.getLogger(BaseServer.class);
     protected String host = "192.168.10.76";
     protected int port = 8099;
 
     protected DefaultEventLoopGroup defLoopGroup;
     protected NioEventLoopGroup bossGroup;
     protected NioEventLoopGroup workGroup;
-    protected NioServerSocketChannel ssch;
-    protected ChannelFuture cf;
-    protected ServerBootstrap b;
+    protected NioServerSocketChannel socketChannel;
+    protected ChannelFuture channelFuture;
+    protected ServerBootstrap bootstrap;
 
     public void init() throws InterruptedException {
         defLoopGroup = new DefaultEventLoopGroup(8, new ThreadFactory() {
-            private AtomicInteger index = new AtomicInteger(0);
+            private final AtomicInteger index = new AtomicInteger(0);
 
             @Override
-            public Thread newThread(Runnable r) {
+            public Thread newThread(@NotNull Runnable r) {
                 return new Thread(r, "DEFAULTEVENTLOOPGROUP_" + index.incrementAndGet());
             }
         });
         bossGroup = new NioEventLoopGroup(Runtime.getRuntime().availableProcessors(), new ThreadFactory() {
-            private AtomicInteger index = new AtomicInteger(0);
+            private final AtomicInteger index = new AtomicInteger(0);
 
             @Override
-            public Thread newThread(Runnable r) {
+            public Thread newThread(@NotNull Runnable r) {
                 return new Thread(r, "BOSS_" + index.incrementAndGet());
             }
         });
@@ -49,14 +48,16 @@ public abstract class BaseServer implements Server {
             private final AtomicInteger index = new AtomicInteger(0);
 
             @Override
-            public Thread newThread(Runnable r) {
+            public Thread newThread(@NotNull Runnable r) {
                 return new Thread(r, "WORK_" + index.incrementAndGet());
             }
         });
-        b.childOption(ChannelOption.TCP_NODELAY,Boolean.TRUE);
-        b = new ServerBootstrap();
+        socketChannel = new NioServerSocketChannel();
+
+        bootstrap.childOption(ChannelOption.TCP_NODELAY,Boolean.TRUE);
+        bootstrap = new ServerBootstrap();
         //绑定端口后，开启监听
-        ChannelFuture future = b.bind(port).sync();
+        ChannelFuture future = bootstrap.bind(port).sync();
         future.addListener(f -> {
             if (f.isSuccess()) {
                 System.out.println("服务启动成功");

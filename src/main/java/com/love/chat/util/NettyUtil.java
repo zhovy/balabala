@@ -5,7 +5,7 @@ import io.netty.channel.Channel;
 import java.net.SocketAddress;
 
 /**
- * @author Andy
+ * 
  */
 public class NettyUtil {
 

@@ -1,4 +1,4 @@
-package com.love.chat;
+package com.love.chat.server;
 
 import com.love.chat.core.BaseServer;
 import com.love.chat.handler.*;
@@ -18,22 +18,18 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
-/**
- * @author laochunyu
- * @site http://www.wolfbe.com
- * @github https://github.com/beyondfengyu
- */
-public class HappyChatServer extends BaseServer {
+
+public class ChatServer extends BaseServer {
     private final ScheduledExecutorService executorService;
 
-    public HappyChatServer(int port) {
+    public ChatServer(int port) {
         this.port = port;
         executorService = Executors.newScheduledThreadPool(2);
     }
 
     @Override
     public void start() {
-        b.group(bossGroup, workGroup)
+        bootstrap.group(bossGroup, workGroup)
                 .channel(NioServerSocketChannel.class)
                 .option(ChannelOption.SO_KEEPALIVE, true)
                 .option(ChannelOption.TCP_NODELAY, true)
@@ -57,8 +53,8 @@ public class HappyChatServer extends BaseServer {
                 });
 
         try {
-            cf = b.bind().sync();
-            InetSocketAddress addr = (InetSocketAddress) cf.channel().localAddress();
+            channelFuture = bootstrap.bind().sync();
+            InetSocketAddress addr = (InetSocketAddress) channelFuture.channel().localAddress();
             logger.info("WebSocketServer start success, port is:{}", addr.getPort());
 
             // 定时扫描所有的Channel，关闭失效的Channel

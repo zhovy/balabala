@@ -10,15 +10,15 @@ import java.util.Map;
  * 聊天室的协议
  * | head | body
  *   4
- * @author Andy
+ * 
  * @site http://www.wolfbe.com
  * @github https://github.com/beyondfengyu
  */
 public class ChatProto {
     public static final int PING_PROTO = 1 << 8 | 220; //ping消息
     public static final int PONG_PROTO = 2 << 8 | 220; //pong消息
-    public static final int SYST_PROTO = 3 << 8 | 220; //系统消息
-    public static final int EROR_PROTO = 4 << 8 | 220; //错误消息
+    public static final int SYSTEM_PROTO = 3 << 8 | 220; //系统消息
+    public static final int ERR_PROTO = 4 << 8 | 220; //错误消息
     public static final int AUTH_PROTO = 5 << 8 | 220; //认证消息
     public static final int MESS_PROTO = 6 << 8 | 220; //普通消息
 
@@ -40,8 +40,8 @@ public class ChatProto {
         return buildProto(PONG_PROTO, null);
     }
 
-    public static String buildSystProto(int code, Object mess) {
-        ChatProto chatProto = new ChatProto(SYST_PROTO, null);
+    public static String buildSysProto(int code, Object mess) {
+        ChatProto chatProto = new ChatProto(SYSTEM_PROTO, null);
         chatProto.extend.put("code", code);
         chatProto.extend.put("mess", mess);
         return JSONObject.toJSONString(chatProto);
@@ -54,7 +54,7 @@ public class ChatProto {
     }
 
     public static String buildErorProto(int code,String mess) {
-        ChatProto chatProto = new ChatProto(EROR_PROTO, null);
+        ChatProto chatProto = new ChatProto(ERR_PROTO, null);
         chatProto.extend.put("code", code);
         chatProto.extend.put("mess", mess);
         return JSONObject.toJSONString(chatProto);

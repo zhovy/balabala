@@ -20,7 +20,7 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 /**
  * Channel的管理器
  *
- * @author Andy
+ * 
  * @site http://www.wolfbe.com
  * @github https://github.com/beyondfengyu
  */
@@ -120,7 +120,7 @@ public class UserInfoManager {
             for (Channel ch : keySet) {
                 UserInfo userInfo = userInfos.get(ch);
                 if (userInfo == null || !userInfo.isAuth()) continue;
-                ch.writeAndFlush(new TextWebSocketFrame(ChatProto.buildSystProto(code, mess)));
+                ch.writeAndFlush(new TextWebSocketFrame(ChatProto.buildSysProto(code, mess)));
             }
         } finally {
             rwLock.readLock().unlock();
@@ -149,7 +149,7 @@ public class UserInfoManager {
      * @param mess
      */
     public static void sendInfo(Channel channel, int code, Object mess) {
-        channel.writeAndFlush(new TextWebSocketFrame(ChatProto.buildSystProto(code, mess)));
+        channel.writeAndFlush(new TextWebSocketFrame(ChatProto.buildSysProto(code, mess)));
     }
 
     public static void sendPong(Channel channel) {

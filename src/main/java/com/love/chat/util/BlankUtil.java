@@ -6,7 +6,7 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * @author Andy 2015-11-12
+ *  2015-11-12
  * @description 判断字符串、集合、哈希、数组对象是否为空
  */
 public class BlankUtil {

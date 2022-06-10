@@ -1,7 +1,7 @@
 package com.love.chat.proto;
 
 /**
- * @author Andy
+ * 
  */
 public class ChatCode {
 

@@ -10,7 +10,7 @@ import java.util.Date;
 
 
 /**
- * @author Andy 2015-7-31
+ *  2015-7-31
  * @description 时间日期的工具类
  */
 public class DateTimeUtil {

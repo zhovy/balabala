@@ -13,10 +13,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.File;
-
-
 /**
- * @Author: zhouy
+ * @Author: Zhouy
  **/
 public class FileUploadServerHandler extends SimpleChannelInboundHandler<FileUploadRequestVo> {
     private static final Logger logger = LoggerFactory.getLogger(FileUploadServerHandler.class);
@@ -39,6 +37,7 @@ public class FileUploadServerHandler extends SimpleChannelInboundHandler<FileUpl
             //毫秒数+.文件后缀
             String newName = System.currentTimeMillis() + fileName.substring(fileName.lastIndexOf("."));
             fileUpload.renameTo(new File(Constants.FILE_UPLOAD_ABS_PATH_PREFIX + newName));
+            logger.info("文件上传路径：{}", Constants.FILE_UPLOAD_ABS_PATH_PREFIX + newName);
             ResponseUtil.sendHttpResponse(ctx, request, ResponseUtil.get200Response(Constants.FILE_UPLOAD_MAPPING_URL_PREFIX + newName));
 
         }

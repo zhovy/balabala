@@ -7,7 +7,7 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>happy-chat ${project.version}</name>
+    <name>chat ${project.version}</name>
 
 
     <licenses>
@@ -87,7 +87,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>com.love.chat.HappyChatMain</mainClass>
+                            <mainClass>com.love.chat.ChatMain</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
@@ -106,7 +106,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
-                            <mainClass>com.love.chat.HappyChatMain</mainClass>
+                            <mainClass>com.love.chat.ChatMain</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

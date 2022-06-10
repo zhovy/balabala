@@ -5,10 +5,11 @@ import io.netty.channel.Channel;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * @author Andy
+ * 
  */
 public class UserInfo {
-    private static AtomicInteger uidGener = new AtomicInteger(1000);
+    //
+    private static final AtomicInteger uidAutoIncrement = new AtomicInteger(1000);
 
     private boolean isAuth = false; // 是否认证
     private long time = 0;  // 登录时间
@@ -62,6 +63,10 @@ public class UserInfo {
     }
 
     public void setUserId() {
-        this.userId = uidGener.incrementAndGet();
+        this.userId = uidAutoIncrement.incrementAndGet();
     }
+    public void setUserId(Integer userId) {
+        this.userId = userId;
+    }
+
 }
