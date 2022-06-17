@@ -141,7 +141,6 @@ public class KillDemo {
 class RequestPromise {
     private UserRequest userRequest;
     private Result result;
-
     public RequestPromise(UserRequest userRequest) {
         this.userRequest = userRequest;
     }
